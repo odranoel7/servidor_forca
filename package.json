@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
+    "websockets": "nodemon websocket.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "express": "^4.17.1",
     "knex": "^0.95.6",
     "nodemon": "^2.0.7",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.2",
+    "ws": "^7.4.5"
   }
 }
