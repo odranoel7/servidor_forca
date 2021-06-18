@@ -6,6 +6,7 @@
   "scripts": {
     "server": "nodemon server.js",
     "websockets": "nodemon websocket.js",
+    "mq": "nodemon mqService.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/odranoel7/servidor_forca#readme",
   "dependencies": {
+    "amqplib": "^0.8.0",
     "body-parser": "^1.19.0",
+    "config": "^3.3.6",
     "express": "^4.17.1",
     "knex": "^0.95.6",
     "nodemon": "^2.0.7",

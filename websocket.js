@@ -1,13 +1,13 @@
 const knex = require('./banco.js');
 
 const WebSocket = require('ws');
+const wss = new WebSocket.Server({
+    port: 8080
+});
 const todosjogadores = Array();
 var todaspalavras = Array();
 var dica = '';
 var jogadorVez = 0;
-const wss = new WebSocket.Server({
-    port: 8080
-});
 var enviar = {
     valor              : '',
     idjog              : '',
